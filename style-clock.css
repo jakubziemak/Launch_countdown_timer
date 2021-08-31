@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Red Hat Text', sans-serif;
+}
+body{
+    align-items: center;
+    background-color: hsl(234, 17%, 12%);
+    background-image: url('images/bg-stars.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: white;
+    font-size: 2rem;
+    margin: 150px;
+    letter-spacing: 18px;
+    text-transform: uppercase;
+}
+h3{
+    align-items: center;
+    display: flex;
+    font-size: 6rem;
+    height: 190px;
+    justify-content: center;
+    width: 200px;
+}
+h4{
+    bottom: 0;
+    color: hsl(237, 18%, 59%);
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    letter-spacing: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    width: 200px;
+    
+}
+i{
+    color: white;
+    margin: 20px;
+    transform: scale(2);
+    
+}
+.deo-sata{
+    height: 190px;
+    margin: 20px;
+    width: 200px;
+}
+.flip{
+    height: 95px;
+    position: relative;
+    top: 0;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+    width: 200px;
+    z-index: 1;
+}
+.sat{
+    align-items: center;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    perspective: 1000px;
+    width: 100%;
+}
+.social-media{
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    background-image: url('images/pattern-hills.svg');
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+.upper{
+    background-color: hsl(240, 21.4%, 22%);
+    border-radius: 15px 15px 0 0;
+}
+.upper-static{
+    background-color: hsl(236, 20.6%, 25.7%);
+    border-radius: 0 0 15px 15px;
+    bottom: 55px;
+    box-shadow: 0 10px black ;
+}
+.bottom{
+    background-color: hsl(236, 20.6%, 25.7%);
+    border-radius: 0 0 15px 15px;
+    transform: rotateX(180deg);
+}
+.bottom-static{
+    background-color: hsl(240, 21.4%, 22%);
+    border-radius: 15px 15px 0 0;
+    top: 55px;
+}
+.upper, .bottom{
+    backface-visibility: hidden;
+    top: 5;
+}
+.upper, .upper-static, .bottom, .bottom-static{
+    height: 95px;
+    position: absolute;
+    overflow-y: hidden;
+    width: 200px;
+}
+#days, #hours, #minutes, #seconds, 
+#days-bottom-static, #hours-bottom-static, #minutes-bottom-static, #seconds-bottom-static{
+    color: hsl(346, 60.6%, 57.3%);
+    
+}
+#days-static, #hours-static, #minutes-static ,#seconds-static,
+#days-bottom, #hours-bottom, #minutes-bottom, #seconds-bottom{
+    transform: translateY(-50%);
+    color: hsl(345, 95%, 68%);
+}

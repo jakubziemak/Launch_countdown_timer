@@ -11,10 +11,10 @@ let end = new Date();
 end.setDate(end.getDate() + 2);
 
 function loop(element, unit, timeOut){
-    for(let elem of element)(
+    for(let elem of element){
         setTimeout(()=>{elem.innerHTML = unit}, timeOut)
-        )
     }
+}
     
     function flip(id){
         let elem = document.getElementById(id);
@@ -51,7 +51,6 @@ function clock(){
     loop(hoursBottom, realHours, 0)
     loop(minutesBottom, minutes, 0)
     loop(secondsBottom, seconds, 0);
-
     flip('flip-seconds');
     setTimeout(()=>{unFlip('flip-seconds')}, 500);
 

@@ -3,4 +3,4 @@ My solution to [this](https://www.frontendmentor.io/challenges/launch-countdown-
   
 Clock is always counting down two days from loading the page.  
   
-You can see it [here](https://jakubz97.github.io/Launch_countdown_timer/)
+You can see it [here](https://jakubziemak.github.io/Launch_countdown_timer/)
